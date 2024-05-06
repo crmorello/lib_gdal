@@ -1,6 +1,6 @@
 # lib_gdal
 
-Crystal wrapper for GDAL. Only a subset of the library is supported for now.
+Crystal wrapper for [GDAL](https://gdal.org/). Only a subset of the library is supported for now.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Crystal wrapper for GDAL. Only a subset of the library is supported for now.
 require "lib_gdal"
 ```
 
-You will need GDAL installed.
+You will need [GDAL](https://gdal.org/) installed.
 
 ## Development
 
