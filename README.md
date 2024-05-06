@@ -1,6 +1,6 @@
 # lib_gdal
 
-TODO: Write a description here
+Crystal wrapper for GDAL. Only a subset of the library is supported for now.
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      lib_gdal:
-       github: your-github-user/lib_gdal
+       github: crmorello/lib_gdal
    ```
 
 2. Run `shards install`
@@ -20,7 +20,7 @@ TODO: Write a description here
 require "lib_gdal"
 ```
 
-TODO: Write usage instructions here
+You will need GDAL installed.
 
 ## Development
 
@@ -36,4 +36,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Corey Morello](https://github.com/your-github-user) - creator and maintainer
+- [Corey Morello](https://github.com/crmorello) - creator and maintainer
