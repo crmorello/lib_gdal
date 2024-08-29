@@ -23,23 +23,24 @@ lib LibGDAL
     CE_Fatal   = 4
   end
 
+  # just matching the gdal header order
   enum DataType
-    GDT_Unknown
-    GDT_Byte
-    GDT_Int8
-    GDT_UInt16
-    GDT_Int16
-    GDT_UInt32
-    GDT_Int32
-    GDT_UInt64
-    GDT_Int64
-    GDT_Float32
-    GDT_Float64
-    GDT_CInt16
-    GDT_CInt32
-    GDT_CFloat32
-    GDT_CFloat64
-    GDT_TypeCount
+    GDT_Unknown   =  0
+    GDT_Byte      =  1
+    GDT_Int8      = 14
+    GDT_UInt16    =  2
+    GDT_Int16     =  3
+    GDT_UInt32    =  4
+    GDT_Int32     =  5
+    GDT_UInt64    = 12
+    GDT_Int64     = 13
+    GDT_Float32   =  6
+    GDT_Float64   =  7
+    GDT_CInt16    =  8
+    GDT_CInt32    =  9
+    GDT_CFloat32  = 10
+    GDT_CFloat64  = 11
+    GDT_TypeCount = 15
   end
 
   enum RWFlag
@@ -101,7 +102,6 @@ lib LibGDAL
     nPixelSpace : Int32,
     nLineSpace : Int32
   ) : Err
-
 
   fun reproject_image = GDALReprojectImage(src_dataset : GDALDatasetH, psz_src_wkt : Char*, dst_dataset : GDALDatasetH, psz_dst_wkt : Char*, resample_alg : GDALResampleAlg, warp_mem_limit : LibC::Double, max_error : LibC::Double, progress_func : GDALProgressFunc, progressArg : Void*, options : GDALWarpOptions) : CPLErr
 
